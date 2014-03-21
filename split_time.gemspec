@@ -5,8 +5,9 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Ershad K"]
   gem.email         = ["ershad@bangthetable.com"]
   gem.description   = %q{Split time into largest chunks}
-  gem.summary       = %q{}
-  gem.homepage      = ""
+  gem.summary       = %q{A ruby gem to split time into largest chunks}
+  gem.homepage      = "https://github.com/ershad/split_time"
+  gem.licenses      = ["MIT License"]
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
