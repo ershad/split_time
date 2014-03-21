@@ -22,7 +22,7 @@ module SplitTime
       OpenStruct.new Date._parse(date)
     end
 
-    def compute_month(months, start_or_end, c_days, all_days_for_all = false)
+    def compute_month(months, start_or_end, c_days)
       months.inject({}) do |hash, month|
         hash.merge!({
           month => { days: (start_or_end == month && c_days.is_a?(Array) ? c_days : "all_days" ) }
